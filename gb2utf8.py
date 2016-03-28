@@ -16,7 +16,7 @@ import codecs
 
 def encode_utf8(src_file, out_file):
     # Open and encode the origianl content
-    file_source = codecs.open(src_file, mode='r', encoding="gb2312")
+    file_source = codecs.open(src_file, mode='r', encoding="gb2312", errors='ignore')
     file_content = file_source.read()
     file_source.close()
 
